@@ -1,0 +1,81 @@
+@import bootstrap
+
+html
+	position: relative
+	min-height: 100%
+
+body
+	line-height: 1.6
+	background: #ede8de
+
+.container
+	margin: 3em auto 0em auto
+
+.row-no-padding
+	[class*="col-"] 
+		padding-left: 2px !important
+		padding-right: 2px !important
+
+.game-wrapper
+	margin-bottom: 40px
+	.game
+		background: #dddddd
+		padding: 4px 5px 0 5px
+		margin: 20px 0
+
+.grid
+	margin: 0px 12px 
+
+.cell
+	cursor: pointer
+	background: #000
+	height: 30px
+	margin-bottom: 4px
+	color: #444
+	position: relative
+	-webkit-transition: all .3s ease
+	-moz-transition: all .3s ease
+	transition: all .3s ease
+		
+.active
+	background: #fff
+
+.cell:hover
+	background: #fff
+
+.game-explanation
+	margin-top: 20px
+	font-size: 14px
+	text-align: justify
+	position: relative
+	animation: pop-in-big 700ms ease 2s both
+	color: #666
+	margin-top: 30px
+	height: 76px
+	box-sizing: border-box
+	border-radius: 3px 
+
+.btn
+	transition: background .2s, border .2s
+	text-transform: uppercase
+	text-align: center
+	text-decoration: none
+	outline: 0
+	vertical-align: top
+	color: #273845
+	display: inline-block
+	font-size: 13px
+	letter-spacing: .08em
+	line-height: 14px
+	padding: 10px 20px
+	border-radius: 0
+
+.btn-primary
+	color: #fff
+	background-color: #337ab7
+	border-color: #2e6da4
+
+.btn-warning
+	color: #fff
+	background-color: #ec971f
+	border-color: #d58512

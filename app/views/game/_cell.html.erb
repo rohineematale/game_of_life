@@ -1,0 +1,11 @@
+<div class="grid">
+  <% for i in 0..(@rows - 1) %>
+    <div class="row row-no-padding">
+      <% for j in 0..(@cols - 1) %>
+        <div class="col-lg-1">
+          <div class="cell fadeIn <%= active_grid?(i,j) %>" row="<%= i %>" col="<%= j %>"></div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
